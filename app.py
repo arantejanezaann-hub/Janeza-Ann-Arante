@@ -3,14 +3,14 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 @app.route('/')
 def home():
-return "Welcome to my first API!"
+return "Welcome to janeza API!"
 @app.route('/student')
 def get_student():
 return jsonify({
 "student_id": "2026-00123",
-"name": "Juan Dela Cruz",
+"name": "Janeza Ann Arante",
 "program": "BSIT",
-"year": 1,
+"year": 3,
 "section": "A"
 })
 @app.route('/hello')
